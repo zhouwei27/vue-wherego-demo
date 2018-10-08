@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body) // fastclick用于解决移动端300ms点击事件延迟问题
