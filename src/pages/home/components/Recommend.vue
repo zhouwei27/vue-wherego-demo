@@ -2,14 +2,20 @@
 <div>
   <div class="title">热销推荐</div>
   <ul>
-    <li class="item" v-for="item of list" :key="item.id">
+    <router-link
+      tag="li"
+      class="item"
+      v-for="item of list"
+      :key="item.id"
+      :to="'/detail/' + item.id"
+    >
       <img class="item-img" :src="item.imgUrl" />
       <div class="item-info">
         <p class="item-title">{{item.title}}</p>
         <p class="item-desc">{{item.desc}}}</p>
         <button class="item-button">查看详情</button>
       </div>
-    </li>
+    </router-link>
   </ul>
 </div>
 </template>
@@ -20,26 +26,6 @@ export default {
   props: {
     list: Array
   }
-  // data () {
-  //   return {
-  //     recommendList: [{
-  //       id: '0001',
-  //       imgUrl: 'http://img1.qunarzz.com/sight/p0/1704/c9/c936f3fccfc6d7eda3.img.jpg_200x200_46052773.jpg',
-  //       title: '上海杜莎夫人蜡像馆',
-  //       desc: '蜡像馆蜡像馆蜡像馆蜡像馆蜡像馆'
-  //     }, {
-  //       id: '0002',
-  //       imgUrl: 'http://img1.qunarzz.com/sight/p0/1704/c9/c936f3fccfc6d7eda3.img.jpg_200x200_46052773.jpg',
-  //       title: '上海杜莎夫人蜡像馆',
-  //       desc: '蜡像馆蜡像馆蜡像馆蜡像馆蜡像馆'
-  //     }, {
-  //       id: '0003',
-  //       imgUrl: 'http://img1.qunarzz.com/sight/p0/1704/c9/c936f3fccfc6d7eda3.img.jpg_200x200_46052773.jpg',
-  //       title: '上海杜莎夫人蜡像馆',
-  //       desc: '蜡像馆蜡像馆蜡像馆蜡像馆蜡像馆'
-  //     }]
-  //   }
-  // }
 }
 </script>
 
