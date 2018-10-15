@@ -6,7 +6,7 @@ import router from './router'
 import store from './store'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'babel-polyfill' //引入后所有浏览器都可以支持promise
+import 'babel-polyfill' // 引入后所有浏览器都可以支持promise
 import 'styles/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 
