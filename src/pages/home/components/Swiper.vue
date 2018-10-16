@@ -21,13 +21,6 @@ export default {
         pagination: '.swiper-pagination',
         loop: true
       }
-      // swiperList: [{
-      //   id: '0001',
-      //   imgUrl: 'https://img1.qunarzz.com/order/comp/1805/2e/6e407f088bfb902.png'
-      // }, {
-      //   id: '0002',
-      //   imgUrl: 'https://img1.qunarzz.com/order/comp/1805/2e/6e407f088bfb902.png'
-      // }]
     }
   },
   computed: {
