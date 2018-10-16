@@ -20,6 +20,8 @@ export default {
   name: 'Home',
   components: {
     HomeHeader,
+    // 异步组件实现按需加载
+    // HomeHeader: () => import('./components/Header')
     HomeSwiper,
     HomeIcons,
     HomeRecommend,
